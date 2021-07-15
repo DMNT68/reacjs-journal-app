@@ -9,7 +9,7 @@ export const NoteScreen = () => {
                 <input type="text" placeholder="Some awesome title" className="notes__title-input" autoComplete="off"/>
                 <textarea placeholder="What happen today" className="notes__textarea"></textarea>
                 <div className="notes__image">
-                    <img src="https://images.unsplash.com/photo-1607793726482-84fa7865eaca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="image"/>
+                    <img src="https://images.unsplash.com/photo-1607793726482-84fa7865eaca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="img"/>
                 </div>
             </div>
         </div>
