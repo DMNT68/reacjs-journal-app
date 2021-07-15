@@ -9,7 +9,7 @@ import { removeError, setError } from '../../actions/ui';
 
 export const LoginScreen = () => {
   const dispatch = useDispatch();
-  const { msgError, loading } = useSelector((state) => state.ui);
+  const { loading, msgError } = useSelector((state) => state.ui);
 
   const [values, handleInputChange] = useForm({
     email: 'andressalgado41@gmail.com',
@@ -47,7 +47,7 @@ export const LoginScreen = () => {
 
   return (
     <>
-      <h3 className="auth__title">Login</h3>
+      <h3 className="auth__title">Login-{loading?'si':'no'}</h3>
       {msgError && <div className="auth__alert-error">{msgError}</div>}
       <form onSubmit={handleLogin}>
         <input className="auth__input" type="text" placeholder="Email" name="email" value={email} onChange={handleInputChange} />
