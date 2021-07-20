@@ -12,7 +12,7 @@ export const LoginScreen = () => {
   const { loading, msgError } = useSelector((state) => state.ui);
 
   const [values, handleInputChange] = useForm({
-    email: 'andressalgado41@gmail.com',
+    email: 'andressalgado40@gmail.com',
     password: '123456',
   });
 
@@ -47,7 +47,7 @@ export const LoginScreen = () => {
 
   return (
     <>
-      <h3 className="auth__title">Login-{loading?'si':'no'}</h3>
+      <h3 className="auth__title">Login</h3>
       {msgError && <div className="auth__alert-error">{msgError}</div>}
       <form onSubmit={handleLogin}>
         <input className="auth__input" type="text" placeholder="Email" name="email" value={email} onChange={handleInputChange} />
