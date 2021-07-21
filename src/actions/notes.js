@@ -37,3 +37,11 @@ export const setNotes = (notes) => ({
   type: types.notesLoad,
   payload: notes,
 });
+
+export const cleanNotes = () => ({
+  type: types.notesLogoutCleaning,
+  payload: {
+    notes: [],
+    active: null,
+  },
+});
