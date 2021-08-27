@@ -33,6 +33,7 @@ const wrapper = mount(
     </MemoryRouter>
   </Provider>
 );
+
 describe('Pruebas en <LoginScreen/>', () => {
   beforeEach(() => {
     store = mockStore(initState);
@@ -51,6 +52,6 @@ describe('Pruebas en <LoginScreen/>', () => {
   test('debe de disparar el startLogin con los respectivos argumentos', () => {
     wrapper.find('form').prop('onSubmit')({ preventDefault() {} });
 
-    expect(startLoginEmailPassword).toHaveBeenCalledWith('andressalgado40@gmail.com','123456');
+    expect(startLoginEmailPassword).toHaveBeenCalledWith('andressalgado40@gmail.com', '123456');
   });
 });
